@@ -1,0 +1,57 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 42, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.896 sec <<< FAILURE!
+testGetFile(FileStorageTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [File@134593bf] but found [null]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:130)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at FileStorageTest.testGetFile(FileStorageTest.java:129)
+
+testGetFile(FileStorageTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected [File@3d0f8e03] but found [null]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:130)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at FileStorageTest.testGetFile(FileStorageTest.java:129)
+
+testGetFile(FileStorageTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [File@2698dc7] but found [null]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:130)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at FileStorageTest.testGetFile(FileStorageTest.java:129)
+
+testWrite(FileStorageTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+exception.FileNameAlreadyExistsException
+	at FileStorage.write(FileStorage.java:35)
+	at FileStorageTest.testWrite(FileStorageTest.java:91)
+
+testWrite(FileStorageTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at FileStorageTest.testWrite(FileStorageTest.java:91)
+
+testWrite(FileStorageTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+exception.FileNameAlreadyExistsException
+	at FileStorage.write(FileStorage.java:35)
+	at FileStorageTest.testWrite(FileStorageTest.java:91)
+
+testDelete(FileStorageTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at FileStorageTest.testDelete(FileStorageTest.java:115)
+

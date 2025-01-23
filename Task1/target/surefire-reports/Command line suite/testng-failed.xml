@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="TestFileStorage">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestFileStorage -->
+      <class name="FileStorageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testGetFile" invocation-numbers="0 1 2"/>
+          <include name="testWrite" invocation-numbers="0 1 2"/>
+          <include name="testDelete" invocation-numbers="1"/>
+          <include name="testFileStorage"/>
+          <include name="setNewStorage"/>
+        </methods>
+      </class> <!-- FileStorageTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
